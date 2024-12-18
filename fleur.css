@@ -1,0 +1,81 @@
+/* style.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(to top, #87ceeb, #f0f8ff);
+    overflow: hidden;
+  }
+  
+  .plante {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .tige {
+    position: relative;
+    width: 10px;
+    height: 300px;
+    background: green;
+    border-radius: 5px;
+    z-index: 1;
+  }
+  
+  .feuille {
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    background: green;
+    border-radius: 50%;
+  }
+  
+  .feuille[data-feuille="1"] {
+    top: 50px;
+    left: -40px;
+    transform: rotate(-30deg);
+  }
+  
+  .feuille[data-feuille="2"] {
+    top: 150px;
+    right: -40px;
+    transform: rotate(30deg);
+  }
+  
+  .fleur {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin-top: -50px;
+  }
+  
+  .centre {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: yellow;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .petale {
+    position: absolute;
+    width: 80px;
+    height: 120px;
+    background: pink;
+    border-radius: 50%;
+    z-index: 2;
+  }
+  
+  .petale[data-petale="1"] { top: -60px; left: 60px; }
+  .petale[data-petale="2"] { top: 10px; left: -20px; transform: rotate(60deg); }
+  .petale[data-petale="3"] { top: 100px; left: -20px; transform: rotate(120deg); }
+  .petale[data-petale="4"] { top: 160px; left: 60px; transform: rotate(180deg); }
+  .petale[data-petale="5"] { top: 100px; left: 140px; transform: rotate(240deg); }
+  .petale[data-petale="6"] { top: 10px; left: 140px; transform: rotate(300deg); }
+  
